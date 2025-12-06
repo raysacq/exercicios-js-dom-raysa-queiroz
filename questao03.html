@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Questão 03</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 24px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-container {
+      max-width: 700px;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      padding: 18px;
+      border-radius: 8px;
+      background: #fafafa;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .row label {
+      width: 160px;
+      font-weight: 600;
+    }
+
+    .row input {
+      flex: 1;
+      padding: 6px 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .small {
+      max-width: 120px;
+    }
+
+    #cadastrar {
+      display: block;
+      margin: 14px auto 0 auto;
+      padding: 8px 18px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    #resultado {
+      margin-top: 16px;
+      white-space: pre-wrap;
+      background: #fff;
+      padding: 12px;
+      border: 1px dashed #ccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Formulário de Cadastro de Usuário</h1>
+
+  <div class="form-container">
+
+    <div class="row">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" />
+    </div>
+
+    <div class="row">
+      <label for="dataNasc">Data de nascimento:</label>
+      <input type="date" id="dataNasc" />
+    </div>
+
+    <div class="row">
+      <label for="rua">Rua:</label>
+      <input type="text" id="rua" />
+    </div>
+
+    <div class="row">
+      <label for="numero">Número:</label>
+      <input type="number" id="numero" class="small" />
+    </div>
+
+    <div class="row">
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" />
+    </div>
+
+    <div class="row">
+      <label for="uf">Estado (UF):</label>
+      <input type="text" id="uf" class="small" maxlength="2" />
+    </div>
+
+    <button id="cadastrar" onclick="cadastrarUsuario()">Cadastrar</button>
+
+    <p id="resultado"></p>
+  </div>
+
+  <script src="questao03.js"></script>
+</body>
+</html>
